@@ -1,0 +1,4 @@
+Build a payment retry workflow for failed card charges.
+
+The feature should detect temporary payment failures, schedule a retry, avoid duplicate charges,
+and expose a clear status to customer support. The first version should be small enough for a single pull request.

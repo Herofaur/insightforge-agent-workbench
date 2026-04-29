@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "insightforge-agent-workbench"
+version = "0.1.0"
+description = "A local multi-agent workflow prototype for turning product requests into delivery-ready engineering plans."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "InsightForge Contributors" }
+]
+license = { text = "MIT" }
+keywords = ["agent", "ai", "workflow", "cli", "developer-tools"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.scripts]
+insightforge = "insightforge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
